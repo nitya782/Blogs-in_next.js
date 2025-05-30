@@ -131,7 +131,7 @@ const Blog1 = () => {
         <title>How Comparison Quotes, Reviews, and Articles Help a Tech Buyer's Journey</title>
         <meta property="og:title" content="How Comparison Quotes, Reviews, and Articles Help a Tech Buyer's Journey" />
         <meta property="og:description" content="Making smart decisions in a noisy digital marketplace" />
-        <meta property="og:image" content="./images/blog1.jpg" />
+        <meta property="og:image" content="./images/blog1_img.jpg" />
         <meta property="og:url" content={currentUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Compare Bazaar" />
