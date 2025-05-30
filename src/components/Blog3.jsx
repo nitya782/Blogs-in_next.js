@@ -132,7 +132,7 @@ const Blog3 = () => {
         <title>AI in HR & Payroll: How AI is reshaping HR & Payroll in 2025</title>
         <meta property="og:title" content="AI in HR & Payroll: How AI is reshaping HR & Payroll in 2025" />
         <meta property="og:description" content="AI advancements in HR and Payroll" />
-        <meta property="og:image" content="./images/blog3_img.jpg" />
+        <meta property="og:image" content="./public/images/blog3_img.jpg" />
         <meta property="og:url" content={currentUrl} />
         <meta property="og:type" content="article" />
         <meta property="og:site_name" content="Compare Bazaar" />
