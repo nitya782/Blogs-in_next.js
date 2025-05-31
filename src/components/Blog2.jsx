@@ -232,7 +232,7 @@ const Blog2 = () => {
             <img
               src="/images/blog1.jpg"
               alt="Tech buyer's journey"
-              className="mx-auto rounded-xl shadow-2xl mb-8 w-full max-w-5xl aspect-[13/7] object-cover transform transition-all duration-700 group-hover:scale-[1.02] group-hover:shadow-2xl"
+              className="mx-auto rounded-xl shadow-xl mb-8 w-full max-w-5xl aspect-[13/7] object-cover transform transition-all duration-700 group-hover:scale-[1.02] group-hover:shadow-xl"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           </div>

@@ -109,6 +109,17 @@ export default function BlogLayout() {
       views: Math.floor(Math.random() * 500 + 100),
       likes: Math.floor(Math.random() * 200 + 50)
     },
+        {
+      id: 4,
+      title: "VoIP vs. Traditional Phone: What’s Right for Your Business?",
+      date: "June 5, 2025",
+      readTime: "5 min read",
+      category: "Informative",
+      imageUrl: "https://pbxinthe.cloud/wp-content/uploads/2021/08/VoIP-phone-system-scaled.jpeg",
+      slug: "/VoIP",
+      views: Math.floor(Math.random() * 500 + 100),
+      likes: Math.floor(Math.random() * 200 + 50)
+    },
    
   ];
 
