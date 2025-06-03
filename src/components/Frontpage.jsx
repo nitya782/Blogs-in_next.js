@@ -101,7 +101,7 @@ export default function BlogLayout() {
     {
       id: 3,
       title: "AI in HR & Payroll: How AI is reshaping HR & Payroll in 2025",
-      date: "June 5, 2025",
+      date: "June 1, 2025",
       readTime: "5 min read",
       category: "Informative",
       imageUrl: "https://images.unsplash.com/photo-1639762681057-408e52192e55?w=500&h=300&fit=crop",
@@ -112,11 +112,44 @@ export default function BlogLayout() {
         {
       id: 4,
       title: "VoIP vs. Traditional Phone: What’s Right for Your Business?",
-      date: "June 5, 2025",
+      date: "June 2, 2025",
       readTime: "5 min read",
       category: "Informative",
       imageUrl: "https://pbxinthe.cloud/wp-content/uploads/2021/08/VoIP-phone-system-scaled.jpeg",
       slug: "/VoIP",
+      views: Math.floor(Math.random() * 500 + 100),
+      likes: Math.floor(Math.random() * 200 + 50)
+    },
+            {
+      id: 5,
+      title: "Top 5 Things to Look for in a Fleet Management System in 2025",
+      date: "June 3, 2025",
+      readTime: "5 min read",
+      category: "Informative",
+      imageUrl: "https://th.bing.com/th/id/OIP.hz30-amlv3X95J3WzWzoCQHaHQ?r=0&rs=1&pid=ImgDetMain",
+      slug: "/fleet-management-system-2025",
+      views: Math.floor(Math.random() * 500 + 100),
+      likes: Math.floor(Math.random() * 200 + 50)
+    },
+            {
+      id: 6,
+      title: "Salesforce vs. HubSpot vs. Zoho: Which CRM Is Best for You?",
+      date: "June 4, 2025",
+      readTime: "5 min read",
+      category: "Informative",
+      imageUrl: "https://www.apexhours.com/wp-content/uploads/2024/01/Difference-between-Salesforce-vs.-HubSpot-vs.-Zoho.jpg",
+      slug: "/salesforce-vs-hubspot-vs-zoho",
+      views: Math.floor(Math.random() * 500 + 100),
+      likes: Math.floor(Math.random() * 200 + 50)
+    },
+            {
+      id: 7,
+      title: "Is Your CRM GDPR-Compliant? What You Need to Know",
+      date: "June 5, 2025",
+      readTime: "5 min read",
+      category: "Informative",
+      imageUrl: "https://th.bing.com/th/id/OIP.zkMVHoOnG3wmiIZJs1GE5AAAAA?r=0&rs=1&pid=ImgDetMain",
+      slug: "/crm-gdpr-compliance-guide",
       views: Math.floor(Math.random() * 500 + 100),
       likes: Math.floor(Math.random() * 200 + 50)
     },
