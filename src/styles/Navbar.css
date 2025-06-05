@@ -1,0 +1,404 @@
+/* Main Navbar Styles */
+.navbar-container {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  position: fixed; /* Fix the navbar at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+  backdrop-filter: blur(10px); /* Glass morphism effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-bottom: 1px solid rgba(230, 230, 230, 0.7); /* Subtle border */
+}
+
+.navbar-inner {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 1.5rem; /* Increase padding for better spacing */
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0; /* Increase padding for taller navbar */
+  height:85px;
+}
+
+/* Add padding to body to prevent content from hiding behind fixed navbar */
+body {
+  padding-top: 80px; /* Match the height of the navbar */
+}
+
+/* Logo Styles */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.logo-link:hover {
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+}
+
+.logo-360 {
+  font-size: 1.75rem; /* Slightly larger font size */
+  font-weight: 800; /* Bolder font weight */
+  color: #1a1a1a; /* Darker color for better contrast */
+  margin-right: 0.25rem;
+  letter-spacing: -0.5px; /* Tighter letter spacing */
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); /* Subtle text shadow */
+}
+
+.logo-connect {
+  font-size: 1.75rem; /* Slightly larger font size */
+  font-weight: 300; /* Lighter font weight */
+  color: #444; /* Slightly darker color */
+  letter-spacing: -0.5px; /* Tighter letter spacing */
+}
+
+.logo-tagline {
+  font-size: 0.75rem; /* Slightly larger font size */
+  color: #666; /* Slightly darker color */
+  margin-left: 0.3rem;
+  margin-top: 0.2rem;
+  letter-spacing: 0.3px; /* Slight letter spacing */
+  font-style: italic; /* Italic for a premium feel */
+}
+
+/* Navigation Links */
+.navbar-links {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Increase gap between links */
+  }
+}
+@media (min-width: 1024px) and (max-width: 1120px) {
+  .navbar-links {
+    gap: 0.8rem; /* Increase gap between links */
+  }
+}
+
+.nav-item-container {
+  position: relative;
+}
+
+/* Nav item styles with hover and active states */
+.nav-item {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0.75rem 0.5rem; /* Increase padding for better click area */
+  font-size: 1rem; /* Slightly larger font size */
+  color: #3d3c3c; /* Darker color for better contrast */
+  cursor: pointer;
+  transition: all 0.25s ease;
+  position: relative;
+  font-weight: 700; /* Medium font weight */
+  letter-spacing: 0px; /* Slight letter spacing */
+  border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+/* Hover effect */
+.nav-item:hover {
+  color: #ff8633; /* Blue color on hover */
+}
+
+/* Active state for currently clicked element */
+.nav-item.active {
+  color: #ff8633; /* Blue color for active state */
+  
+}
+
+/* Special blue styling, but not default active */
+.nav-item-blue {
+  color:#000e54;
+  font-weight: 600; /* Bolder font weight */
+}
+
+.dropdown-arrow {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.4rem;
+  transition: transform 0.25s ease;
+  color: #3d3c3c; /* Slightly darker color */
+}
+
+.nav-item:hover .dropdown-arrow {
+ 
+  color: #000e54; /* Blue color on hover */
+}
+
+/* Button Styles */
+.btn {
+  padding: 0.75rem 1.5rem; /* Increase padding for better proportions */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  font-weight: 600; /* Bolder font weight */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px; /* Slight letter spacing */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: 0.5s;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+
+/* Mobile Menu Button */
+.mobile-menu-button {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 8px; /* Rounded corners for a modern look */
+  transition: all 0.2s ease;
+}
+
+.mobile-menu-button:hover {
+  background-color:white; /* Subtle background on hover */
+  transform: translateY(-1px); /* Slight lift on hover */
+}
+
+.mobile-menu-button:active {
+  transform: translateY(0);
+}
+
+@media (min-width: 1024px) {
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+.hamburger-icon {
+  width: 1.75rem; /* Slightly larger icon */
+  height: 1.75rem; /* Slightly larger icon */
+  color: #3d3c3c; /* Darker color for better contrast */
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  background-color: white;
+  border-top: 1px solid rgba(230, 230, 230, 0.7); /* Subtle border */
+  position: fixed;
+  top: 80px; /* Match the height of the navbar */
+  left: 0;
+  width: 100%;
+  height: auto;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px); /* Glass morphism effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  display: none; /* Hide by default */
+}
+
+.mobile-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+  display: block; /* Show when active */
+}
+
+.mobile-menu-inner {
+  padding: 1rem 1.5rem; /* Increase padding for better spacing */
+}
+
+.mobile-menu-item {
+  border-bottom: 1px solid rgba(230, 230, 230, 0.7); /* Subtle border */
+  padding: 0.75rem 0; /* Increase padding for better spacing */
+}
+
+/* Mobile menu button styles */
+.mobile-menu-button-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0.75rem 0.75rem; /* Increase padding for better spacing */
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+.mobile-menu-button-item:hover {
+  background-color: white; /* Subtle background on hover */
+  transform: translateY(-1px); /* Slight lift on hover */
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.05); /* Subtle shadow on hover */
+}
+
+/* Active state for mobile menu */
+.mobile-menu-button-item.active {
+  background-color: white; /* Slightly darker background for active state */
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08); /* Subtle shadow for active state */
+}
+
+.mobile-menu-text {
+  font-size: 1.1rem; /* Slightly larger font size */
+  color: #3d3c3c; /* Darker color for better contrast */
+  font-weight: 500; /* Medium font weight */
+}
+
+.mobile-menu-text-blue {
+  color:#000e54; /* Blue color for special text */
+  font-weight: 600; /* Bolder font weight */
+}
+
+.mobile-dropdown-arrow {
+  width: 1.1rem; /* Slightly larger icon */
+  height: 1.1rem; /* Slightly larger icon */
+  transition: transform 0.25s ease;
+}
+
+.mobile-dropdown-arrow.rotated {
+  transform: rotate(180deg);
+}
+
+.mobile-dropdown-content {
+  padding: 0.75rem 0 0.75rem 1.5rem; /* Increase padding for better spacing */
+  /* Subtle background */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  margin-top: 0.5rem;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.02); /* Subtle inset shadow */
+}
+
+/* Category Styles */
+.mobile-dropdown-category {
+  margin-bottom: 1.25rem; /* Increase margin for better spacing */
+}
+
+.category-title {
+  font-size: 0.95rem; /* Slightly larger font size */
+  font-weight: 600; /* Bolder font weight */
+  color: #ff9200; /* Blue color for category title */
+  margin-bottom: 0.75rem; /* Increase margin for better spacing */
+  padding-bottom: 0.35rem; /* Increase padding for better spacing */
+  border-bottom: 1.5px solid #ff9200; /* Subtle border */
+  letter-spacing: 0.5px; /* Slight letter spacing */
+}
+
+.category-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Category item link styles */
+.category-item-link {
+  display: block;
+  padding: 0.5rem 0.75rem; /* Increase padding for better spacing */
+  font-size: 0.95rem; /* Slightly larger font size */
+  color: #3d3c3c; /* Slightly darker color */
+  text-decoration: none;
+  transition: all 0.25s ease;
+  border-radius: 8px; /* Rounded corners for a modern look */
+  margin-bottom: 0.25rem;
+}
+
+.category-item-link:hover {
+  color: #000e54; /* Blue color on hover */
+  background-color: white; /* Subtle background on hover */
+  transform: translateX(5px); /* Slight shift on hover */
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.05); /* Subtle shadow on hover */
+}
+
+.category-item-link.active {
+  color: #000e54; /* Blue color for active state */
+  background-color: white; /* Slightly darker background for active state */
+  transform: translateX(5px); /* Slight shift for active state */
+  font-weight: 500; /* Medium font weight */
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08); /* Subtle shadow for active state */
+}
+
+.view-all-item {
+  margin-top: 0.75rem; /* Increase margin for better spacing */
+}
+
+.view-all-link {
+  font-size: 0.85rem; /* Slightly larger font size */
+  font-weight: 600; /* Bolder font weight */
+  color: #000e54; /* Blue color for link */
+  text-decoration: none;
+  transition: all 0.25s ease;
+  display: inline-block;
+  padding: 0.4rem 0.75rem; /* Increase padding for better spacing */
+  border-radius: 8px; /* Rounded corners for a modern look */
+}
+
+.view-all-link:hover {
+  color: #000e54; /* Darker blue color on hover */
+  background-color: white; /* Subtle background on hover */
+  transform: translateY(-1px); /* Slight lift on hover */
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.05); /* Subtle shadow on hover */
+}
+
+.mobile-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* Increase gap for better spacing */
+  padding: 1.25rem 0; /* Increase padding for better spacing */
+}
+
+.btn-mobile {
+  width: 100%;
+  padding: 0.9rem 1rem; /* Increase padding for better proportions */
+  text-align: center;
+  border-radius: 8px; /* Rounded corners for a modern look */
+  font-weight: 600; /* Bolder font weight */
+}
+
+/* Glass morphism effect for a more premium look */
+@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+  .navbar-container {
+    background-color:white; /* Semi-transparent background */
+  }
+
+  .mobile-menu {
+    background-color: white; /* Semi-transparent background */
+  }
+
+  .mobile-dropdown-content {
+    background-color: white;/* Semi-transparent background */
+  }
+}

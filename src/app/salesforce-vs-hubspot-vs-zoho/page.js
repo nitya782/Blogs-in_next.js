@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 
-const Blog3 = () => {
+const Blog6 = () => {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -64,8 +64,8 @@ const Blog3 = () => {
   };
 
   const shareContent = async () => {
-    const title = "AI in HR & Payroll: How Artificial Intelligence is Reshaping the Future of Work in 2025";
-    const text = "From manual tasks to strategic impact—AI is changing the way HR and payroll teams operate.";
+    const title = "Salesforce vs. HubSpot vs. Zoho: Which CRM Is Best for You?";
+    const text = "Choosing the right CRM is less about features—and more about fit.";
     
     try {
       if (navigator.share) {
@@ -125,12 +125,12 @@ const Blog3 = () => {
   };
 
   return (
-    <>
+    <div>
 
       <Head>
         <title>Tech Buyer And Its Decision Making Journey.</title>
-        <meta property="og:title" content="AI in HR & Payroll: How Artificial Intelligence is Reshaping the Future of Work in 2025" />
-        <meta property="og:description" content="From manual tasks to strategic impact—AI is changing the way HR and payroll teams operate." />
+        <meta property="og:title" content="Salesforce vs. HubSpot vs. Zoho: Which CRM Is Best for You?" />
+        <meta property="og:description" content="Choosing the right CRM is less about features—and more about fit." />
         <meta property="og:image" content="https://blogs.compare-bazaar.com/images/blog2.webp" />
         <meta property="og:url" content={currentUrl} />
         <meta property="og:type" content="article" />
@@ -219,10 +219,10 @@ const Blog3 = () => {
               B2B Tech Buying Guide
             </span>
             <h1 className="text-3xl md:text-5xl font-bold text-[#0A3761] mb-6 leading-tight bg-gradient-to-r from-[#0A3761] to-blue-600 bg-clip-text text-transparent">
-              AI in HR & Payroll: How Artificial Intelligence is Reshaping the Future of Work in 2025
+              Salesforce vs. HubSpot vs. Zoho: Which CRM Is Best for You?
             </h1>
             <div className="flex items-center text-gray-500 text-sm mb-6">
-              <span>Published on June 1, 2025</span>
+              <span>Published on June 4, 2025</span>
               <span className="mx-2">•</span>
               <span>5 min read</span>
             </div>
@@ -230,346 +230,432 @@ const Blog3 = () => {
           
           <div className="relative group">
             <img
-              src="/images/blog1.jpg"
+              src="/images/VoIP.webp"
               alt="Tech buyer's journey"
               className="mx-auto rounded-xl shadow-xl mb-8 w-full max-w-5xl aspect-[13/7] object-cover transform transition-all duration-700 group-hover:scale-[1.02] group-hover:shadow-xl"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           </div>
           
-           <div className="bg-blue-50 border-l-4 border-[#0A3761] p-4 mb-8 rounded-r-lg hover:shadow-md transition-shadow duration-300">
+           <div className="bg-blue-50 border-l-4 border-[#0A3761] p-4 mb-8 rounded-r-lg hover:
+            transition-shadow duration-300">
             <p className="italic text-gray-700 text-lg">
-              From manual tasks to strategic impact—AI is changing the way HR and payroll teams operate.
+              Choosing the right CRM is less about features—and more about fit.
             </p>
           </div> 
           
           <p className="text-lg leading-relaxed text-gray-700 mb-6">
-           HR and payroll teams are no longer just processing forms and paychecks—they're shaping the employee experience, enabling business agility, and driving strategic decisions.</p>
-          <p className="text-lg leading-relaxed text-gray-700">
-            And in 2025, <b>AI is at the center of that transformation.</b>
-          </p>
-          <p className="text-lg leading-relaxed text-gray-700 mt-4">
-            At Compare-Bazaar.com, we help businesses evaluate and compare the best HR and payroll solutions. And today, one thing is clear: <b>AI is no longer a futuristic add-on—it’s a must-have feature built into the most competitive platforms.</b>
-          </p>
-          <p className="text-lg leading-relaxed text-gray-700 mt-4">
-            So, what does that mean for your business?
-          </p>
-          <p className="text-lg leading-relaxed text-gray-700 mt-4">
-            Let’s break down how AI is truly reshaping HR and payroll management in 2025.
-          </p>
+          If you are a growing business or enterprise team looking to invest in customer relationship management, you’ve likely come across the three big names in the CRM world: <b>Salesforce</b>, <b>HubSpot</b>, and <b>Zoho</b>.</p>
+
+          <p className="text-lg leading-relaxed text-gray-700 mb-6 mt-4">
+           Each has a strong reputation. Each promises to help you grow revenue, align teams, and improve customer experience. But here’s the real question:</p>        
         </div>
 
         {/* Step 1 */}
-        <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-200 ${isVisible[2] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-100 ${isVisible[1] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
             <div className="flex items-start mb-6">
-              <div className="bg-[#0A3761] text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 shadow-md">
-                1
+              <div className="bg-[white] text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 
+              ">
+                
               </div>
               <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-                 AI-Powered Payroll Automation = Accuracy + Time Savings
+                Which CRM is best for you?
               </h2>
             </div>
             <div className="pl-14">
-              <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                Payroll is complex—tax codes, deductions, compliance regulations, and variable pay structures make it error-prone and time-consuming.
-              </p>
-              <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                In 2025, <b>AI-powered payroll systems</b> can:
-              </p>
-              <div className="grid md:grid-rows-2 gap-4 mb-6">
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
-                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
-                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2H5a1 1 0 01-1-1V4zm3 1h2v2H7V5zm4 0h2v2h-2V5zm-4 4h2v2H7V9zm4 0h2v2h-2V9z" clipRule="evenodd" />
-                    </svg>
-                    Auto-detect discrepancies in hours, pay rates, or tax data
-                  </h3>
-                </div>
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
-                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
-                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                    </svg>
-                     Flag compliance risks before they happen
-                  </h3>
-                  <p className="text-gray-600"></p>
-                </div>
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
-                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
-                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
-                    </svg>
-                    Adapt to local and international payroll regulations
-                  </h3>
-                  <p className="text-gray-600"></p>
-                </div>
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
-                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
-                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
-                    </svg>
-                    Predict errors before payroll runs
-                  </h3>
-                  <p className="text-gray-600"></p>
-                </div>
-
-              </div>
-              
               <p className="text-gray-700 text-lg leading-relaxed">
-                This means <b>fewer mistakes, less manual entry,</b> and <b>faster processing</b>—giving HR teams more time to focus on people, not paperwork.
+                At <b>Compare-Bazaar.com</b>, we help businesses cut through the confusion with real comparisons and tailored insights. This blog will break down the strengths, trade-offs, and best-fit scenarios for each platform—so you can make a confident, informed decision.
               </p>
             </div>
           </div>
         </div>
+
         {/* Step 2 */}
-        <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-200 ${isVisible[2] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
-            <div className="flex items-start mb-6">
-              <div className="bg-[#0A3761] text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 shadow-md">
-                2
-              </div>
-              <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-                 Smarter Hiring with AI-Driven Recruitment Tools
-              </h2>
-            </div>
-            <div className="pl-14">
-              <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                Hiring the right talent remains a top priority—and challenge.<br></br><br></br>
-                AI tools in HR tech now:
-
-              </p>
-              <div className="grid md:grid-rows-2 gap-4 mb-6">
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
-                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
-                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2H5a1 1 0 01-1-1V4zm3 1h2v2H7V5zm4 0h2v2h-2V5zm-4 4h2v2H7V9zm4 0h2v2h-2V9z" clipRule="evenodd" />
-                    </svg>
-                    Scan resumes and match candidates to job descriptions in seconds
-                  </h3>
-                </div>
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
-                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
-                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                    </svg>
-                     Remove unconscious bias by focusing on skills, not keywords
-                  </h3>
-                  <p className="text-gray-600"></p>
-                </div>
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
-                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
-                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
-                    </svg>
-                    Predict candidate success using behavioural and historical data
-                  </h3>
-                  <p className="text-gray-600"></p>
-                </div>
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
-                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
-                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
-                    </svg>
-                    	Automate interview scheduling and communication
-                  </h3>
-                  <p className="text-gray-600"></p>
-                </div>
-
-              </div>
-              
-              <p className="text-gray-700 text-lg leading-relaxed">
-                <b>Bonus benefit:</b> AI allows for more inclusive and diverse hiring pipelines—making recruitment both smarter and fairer.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Step 3 */}
-        <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-200 ${isVisible[2] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
-            <div className="flex items-start mb-6">
-              <div className="bg-[#0A3761] text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 shadow-md">
-                3
-              </div>
-              <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-                 Real-Time Analytics for Workforce Planning
-              </h2>
-            </div>
-            <div className="pl-14">
-              <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                Gone are the days of relying solely on spreadsheets and annual reviews.<br></br><br></br>
-                AI-powered HR platforms now offer:
-
-              </p>
-              <div className="grid md:grid-rows-2 gap-4 mb-6">
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
-                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
-                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2H5a1 1 0 01-1-1V4zm3 1h2v2H7V5zm4 0h2v2h-2V5zm-4 4h2v2H7V9zm4 0h2v2h-2V9z" clipRule="evenodd" />
-                    </svg>
-                    Real-time dashboards tracking employee engagement, performance, and retention
-                  </h3>
-                </div>
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
-                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
-                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                    </svg>
-                    Predictive analytics to forecast turnover or identify skill gaps
-                  </h3>
-                  <p className="text-gray-600"></p>
-                </div>
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
-                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
-                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
-                    </svg>
-                    Insights that help build smarter workforce development plans
-                  </h3>
-                  <p className="text-gray-600"></p>
-                </div>
-
-              </div>
-              
-              <p className="text-gray-700 text-lg leading-relaxed">
-                Managers don’t just react—they anticipate. And AI makes that possible.
-              </p>
-            </div>
-          </div>
-        </div>
+<div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-300 ${isVisible && isVisible[3] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+  <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+    <div className="flex items-start mb-6">
+      <div className="bg-white text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0"></div>
+      <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+        🏆 Quick Overview: CRM at a Glance
+      </h2>
+    </div>
+    <div className="pl-2 overflow-x-auto">
+      <table className="min-w-full border border-gray-200 rounded-lg overflow-hidden">
+        <thead>
+          <tr className="bg-blue-50">
+            <th className="px-4 py-3 text-left text-sm font-semibold text-[#0A3761] border-b border-gray-200">CRM</th>
+            <th className="px-4 py-3 text-left text-sm font-semibold text-[#0A3761] border-b border-gray-200">Best For</th>
+            <th className="px-4 py-3 text-left text-sm font-semibold text-[#0A3761] border-b border-gray-200">Starting Price</th>
+            <th className="px-4 py-3 text-left text-sm font-semibold text-[#0A3761] border-b border-gray-200">Standout Feature</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr className="hover:bg-blue-50">
+            <td className="px-4 py-3 border-b border-gray-100 font-medium">Salesforce</td>
+            <td className="px-4 py-3 border-b border-gray-100">Large enterprises & complex sales</td>
+            <td className="px-4 py-3 border-b border-gray-100">$25 Per User</td>
+            <td className="px-4 py-3 border-b border-gray-100">Deep customization & integrations</td>
+          </tr>
+          <tr className="hover:bg-blue-50">
+            <td className="px-4 py-3 border-b border-gray-100 font-medium">HubSpot</td>
+            <td className="px-4 py-3 border-b border-gray-100">Mid-market & growing SMBs</td>
+            <td className="px-4 py-3 border-b border-gray-100">$20 Per User</td>
+            <td className="px-4 py-3 border-b border-gray-100">All-in-one platform & ease of use</td>
+          </tr>
+          <tr className="hover:bg-blue-50">
+            <td className="px-4 py-3 border-b border-gray-100 font-medium">Zoho</td>
+            <td className="px-4 py-3 border-b border-gray-100">Budget-conscious teams & startups</td>
+            <td className="px-4 py-3 border-b border-gray-100">$20 Per User</td>
+            <td className="px-4 py-3 border-b border-gray-100">Value for money + automation tools</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
 {/* step-4 */}
         <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-200 ${isVisible[2] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
             <div className="flex items-start mb-6">
-              <div className="bg-[#0A3761] text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 shadow-md">
-                4
+              <div className="bg-[white] text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 ">
               </div>
               <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-                 Personalized Employee Experiences
+                🔍 Salesforce: The Industry Powerhouse
               </h2>
             </div>
-            <div className="pl-14">
-              <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                AI enables a more human experience at scale.<br></br><br></br>
-                Think of it this way: your HR system knows that one employee prefers learning videos while another prefers mentorship. One may want flexible pay access, while another cares more about benefits planning.<br></br><br></br>
-                AI helps HR tools:
+              <p className="text-gray-700 text-lg leading-relaxed px-14 mb-4">
+                <b>Ideal for:</b> Large enterprises, B2B sales teams, highly customized workflows
               </p>
+              <p className="text-gray-700 text-lg leading-relaxed px-14 mb-4">
+                Salesforce has earned its reputation as the CRM kingpin—for good reason. It offers <b>endless flexibility,</b> an ecosystem of tools (Sales Cloud, Service Cloud, Marketing Cloud), and thousands of integrations.
+              </p>
+              <p className="text-gray-700 text-lg leading-relaxed px-14 mb-4">
+                <b>Strengths:</b>
+              </p>
+            <div className="pl-14">
               <div className="grid md:grid-rows-2 gap-4 mb-6">
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
                   <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
                     <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2H5a1 1 0 01-1-1V4zm3 1h2v2H7V5zm4 0h2v2h-2V5zm-4 4h2v2H7V9zm4 0h2v2h-2V9z" clipRule="evenodd" />
                     </svg>
-                    Recommend relevant learning modules
+                    Advanced automation and reporting
                   </h3>
                 </div>
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
                   <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
                     <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                     </svg>
-                     Suggest wellness programs based on usage trends
+                    Highly customizable workflows
                   </h3>
                   <p className="text-gray-600"></p>
                 </div>
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
                   <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
                     <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
                       <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
                     </svg>
-                    Provide personalized support via intelligent chatbots
+                    Excellent for multi-department collaboration
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+                                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                    </svg>
+                    Massive app marketplace (AppExchange)
                   </h3>
                   <p className="text-gray-600"></p>
                 </div>
 
               </div>
-              
-              <p className="text-gray-700 text-lg leading-relaxed">
-                The result? <b>Happier, more supported employees—and a stronger culture.</b>
+
+            </div>
+
+              <p className="text-gray-700 text-lg leading-relaxed px-14 mb-4">
+                <b>Considerations:</b>
               </p>
+            <div className="pl-14">
+              <div className="grid md:grid-rows-2 gap-4 mb-6">
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2H5a1 1 0 01-1-1V4zm3 1h2v2H7V5zm4 0h2v2h-2V5zm-4 4h2v2H7V9zm4 0h2v2h-2V9z" clipRule="evenodd" />
+                    </svg>
+                    <b>Steeper learning curve</b>
+                  </h3>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                    </svg>
+                    Higher implementation and admin costs
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                    </svg>
+                    Often requires a dedicated admin or developer
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+              <p className="text-gray-700 text-lg leading-relaxed  mb-4">
+                <i>✅ Best if your team needs power, depth, and custom setup at scale.</i>
+              </p>             
+
+              </div>
+
             </div>
           </div>
         </div>
+
 
 {/* step-5 */}
 
         <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-200 ${isVisible[2] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
             <div className="flex items-start mb-6">
-              <div className="bg-[#0A3761] text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 shadow-md">
-                5
+              <div className="bg-[white] text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 ">
               </div>
               <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-                 Enhanced Compliance and Risk Management
+                💡 HubSpot: The Modern All-in-One Platform
               </h2>
             </div>
-            <div className="pl-14">
-              <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                From GDPR to local tax codes, HR and payroll are surrounded by regulation. And the risk of non-compliance is growing.<br></br><br></br>
-                AI helps by:
-
+              <p className="text-gray-700 text-lg leading-relaxed px-14 mb-4">
+                <b>Ideal for:</b> Growing companies, marketing-centric teams, tech startups
               </p>
+              <p className="text-gray-700 text-lg leading-relaxed px-14 mb-4">
+                HubSpot is loved for its intuitive interface, fast onboarding, and powerful free CRM tier. What really sets it apart is the <b>tight integration between marketing, sales, and service modules</b>—all in one ecosystem.
+              </p>
+              <p className="text-gray-700 text-lg leading-relaxed px-14 mb-4">
+                <b>Strengths:</b>
+              </p>
+            <div className="pl-14">
               <div className="grid md:grid-rows-2 gap-4 mb-6">
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
                   <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
                     <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2H5a1 1 0 01-1-1V4zm3 1h2v2H7V5zm4 0h2v2h-2V5zm-4 4h2v2H7V9zm4 0h2v2h-2V9z" clipRule="evenodd" />
                     </svg>
-                    Automating audit trails
+                    Seamless marketing automation + CRM
                   </h3>
                 </div>
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
                   <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
                     <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                     </svg>
-                     Tracking policy changes and applying them in real-time
+                    Excellent UI and user experience
                   </h3>
                   <p className="text-gray-600"></p>
                 </div>
-                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
                   <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
                     <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
                       <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
                     </svg>
-                    Ensuring your business stays compliant—locally and globally
+                    Robust free version available
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+                                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                    </svg>
+                    Native email, form, and landing page tools
                   </h3>
                   <p className="text-gray-600"></p>
                 </div>
 
               </div>
-              
-              <p className="text-gray-700 text-lg leading-relaxed">
-                No more scrambling to catch up. AI ensures you're always one step ahead.
+
+            </div>
+
+              <p className="text-gray-700 text-lg leading-relaxed px-14 mb-4">
+                <b>Considerations:</b>
               </p>
+            <div className="pl-14">
+              <div className="grid md:grid-rows-2 gap-4 mb-6">
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2H5a1 1 0 01-1-1V4zm3 1h2v2H7V5zm4 0h2v2h-2V5zm-4 4h2v2H7V9zm4 0h2v2h-2V9z" clipRule="evenodd" />
+                    </svg>
+                    Advanced features get pricey
+                  </h3>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                    </svg>
+                    Less flexibility in custom processes than Salesforce
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                    </svg>
+                    Some growing pains for enterprise scaling
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+                                
+              <p className="text-gray-700 text-lg leading-relaxed  mb-4">
+                <i>✅ Best if you want a plug-and-play CRM that scales with your business and aligns sales + marketing quickly.</i>
+              </p>  
+              </div>
+
             </div>
           </div>
         </div>
 
-
-{/* Bonus Section */}
-        <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-400 ${isVisible[4] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="bg-gradient-to-r from-[#0A3761] to-blue-700 p-6 md:p-8 rounded-xl text-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6">
-              <span className="inline-block mr-2 animate-bounce">✅</span> Final Thoughts: AI Doesn’t Replace HR—It Reinvents It
-            </h2>
-               <p className="text-xl leading-relaxed mb-3 font-semibold">
-                In 2025, AI isn’t taking jobs away from HR professionals—it’s <b>making their jobs more impactful.</b><br></br><br></br>
-                By handling the repetitive tasks, flagging issues early, and offering deeper insights, AI allows HR teams to focus on what truly matters: people, growth, and strategy.
-              </p>
-          </div>
-          </div>
-
 {/* step-6 */}
+
+        <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-200 ${isVisible[2] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+            <div className="flex items-start mb-6">
+              <div className="bg-[white] text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 ">
+              </div>
+              <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+                💼 Zoho CRM: Affordable, Feature-Rich, and Growing Fast
+              </h2>
+            </div>
+              <p className="text-gray-700 text-lg leading-relaxed px-14 mb-4">
+                <b>Ideal for:</b> Startups, small businesses, global teams on a budget
+              </p>
+              <p className="text-gray-700 text-lg leading-relaxed px-14 mb-4">
+                Zoho might not have the flash of Salesforce or the marketing muscle of HubSpot—but its <b>incredibly capable for the price.</b> It includes everything from automation to analytics, and integrates well with other Zoho products.
+              </p>
+              <p className="text-gray-700 text-lg leading-relaxed px-14 mb-4">
+                <b>Strengths:</b>
+              </p>
+            <div className="pl-14">
+              <div className="grid md:grid-rows-2 gap-4 mb-6">
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2H5a1 1 0 01-1-1V4zm3 1h2v2H7V5zm4 0h2v2h-2V5zm-4 4h2v2H7V9zm4 0h2v2h-2V9z" clipRule="evenodd" />
+                    </svg>
+                    Competitive pricing (including a solid free tier)
+                  </h3>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                    </svg>
+                    Workflow automation & AI suggestions (Zia AI)
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                    </svg>
+                    Custom dashboards and lead scoring
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+                                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                    </svg>
+                    Mobile-friendly and multilingual support
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+
+              </div>
+
+            </div>
+
+              <p className="text-gray-700 text-lg leading-relaxed px-14 mb-4">
+                <b>Considerations:</b>
+              </p>
+            <div className="pl-14">
+              <div className="grid md:grid-rows-2 gap-4 mb-6">
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2H5a1 1 0 01-1-1V4zm3 1h2v2H7V5zm4 0h2v2h-2V5zm-4 4h2v2H7V9zm4 0h2v2h-2V9z" clipRule="evenodd" />
+                    </svg>
+                    Less intuitive interface for new users
+                  </h3>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                    </svg>
+                    Fewer high-end integrations compared to competitors
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                    </svg>
+                    Limited third-party app ecosystem
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+                                
+              <p className="text-gray-700 text-lg leading-relaxed  mb-4">
+                <i>✅ Best if you are budget-conscious but still want robust CRM features.</i>
+              </p>  
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+{/* final-considerations */}
+
         <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-200 ${isVisible[2] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
             <div className="flex items-start mb-6">
@@ -578,22 +664,119 @@ const Blog3 = () => {
                 
               </div>
               <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-                💡 Ready to Upgrade Your HR or Payroll System?
+               🧠 Final Considerations: Ask Yourself These Questions
               </h2>
             </div>
             <div className="pl-14">
-              <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                At <b>Compare-Bazaar.com,</b> we help businesses compare <b>AI-powered HR and payroll platforms</b>—side-by-side, with no obligation.
-              </p>
-              <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                🔍 Browse features.
-              </p>
-              <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                📊 See pricing.
-              </p>
+              <div className="grid md:grid-rows-2 gap-4 mb-6">
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    1.	What’s your team size and structure?
+                  </h3>
+                  <p className="text-[#0A3761]">Larger teams may need deeper customization (Salesforce), while small-to-midsize businesses can scale with HubSpot or Zoho.</p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    2.	What other tools do you use?
+                  </h3>
+                  <p className="text-gray-600">Consider what integrates best with your existing tech stack.</p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    3.	How much are you willing to spend—not just on licenses, but setup and maintenance?
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    4.	Do you need strong marketing features out of the box?
+                  </h3>
+                  <p className="text-gray-600">HubSpot wins here.</p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:
+                                 transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    5.	Do you value flexibility or simplicity more?
+                  </h3>
+                  <p className="text-gray-600">Salesforce = flexibility, HubSpot = simplicity, Zoho = balance.</p>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
+
+        
+
+          <div className="mt-8 group">
+            <div className="relative overflow-hidden rounded-2xl shadow-xl">
+              <img
+                src="/images/VoIP.webp"
+                alt="VoIP"
+                className="mx-auto w-full max-w-2xl  object-cover transform transition-all duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                <p className="text-white text-lg font-medium">Making informed tech decisions with Compare Bazaar</p>
+              </div>
+            </div>
+            <p className="text-center text-sm text-gray-500 mt-2">Hover to see details</p>
+          </div>
+        </div>
+
+
+
+        {/* Bonus Section */}
+        <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-400 ${isVisible[4] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className="bg-gradient-to-r from-[#0A3761] to-blue-700 p-6 md:p-8 rounded-xl text-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6">
+              <span className="inline-block mr-2 animate-bounce">🚀 </span> Final Verdict
+            </h2>
+
+            
+            <div className="space-y-4">
+              <div className="flex items-start hover:bg-white/10 p-3 rounded-lg transition-all duration-300">
+                <div className="bg-white text-[#0A3761] rounded-full p-1 mr-3 mt-1 flex-shrink-0">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg"><b>Choose Salesforce</b> if you’re an enterprise needing complete control, power, and integrations.</h3>
+                </div>
+              </div>
+              
+              <div className="flex items-start hover:bg-white/10 p-3 rounded-lg transition-all duration-300">
+                <div className="bg-white text-[#0A3761] rounded-full p-1 mr-3 mt-1 flex-shrink-0">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg"><b>Choose HubSpot</b> if you want an easy-to-use CRM with powerful marketing and sales alignment.</h3>
+                  
+                </div>
+              </div>
+              
+              <div className="flex items-start hover:bg-white/10 p-3 rounded-lg transition-all duration-300">
+                <div className="bg-white text-[#0A3761] rounded-full p-1 mr-3 mt-1 flex-shrink-0">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg"><b>Choose Zoho</b> if you want great value, solid features, and are okay with a smaller ecosystem.</h3>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
 
         {/* Final Thoughts */}
         <div className="max-w-4xl mx-auto px-4 py-8">
@@ -602,9 +785,16 @@ const Blog3 = () => {
             <div className="prose prose-lg max-w-none text-gray-700">
 
               
-              <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow duration-300">
+              <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:
+               transition-shadow duration-300">
+              <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">
+               🧭 Still Unsure? Let Us Help You Compare
+              </h2>
                 <p className="font-bold text-lg text-[#0A3761] mb-3">
-                  ✅ Make the right choice—for your people and your business.
+                  At <b>Compare-Bazaar.com,</b> we offer <b>free, side-by-side CRM comparisons</b> based on your goals, budget, and team size. No pressure, no bias—just smart insights to help you make the right choice.
+                </p>
+                <p className="font-bold text-lg text-[#0A3761] mb-3">
+                  🔗 Start comparing today and choose the phone system that fits your business, your budget, and your future.
                 </p>
                 <p className="mb-4">
                   Visit <a href="https://compare-bazaar.com" className="text-blue-600 hover:underline font-medium">Compare-Bazaar.com</a> or reach us at:
@@ -664,7 +854,8 @@ const Blog3 = () => {
                 disabled={loading}
                 className={`w-full ${
                   subscribed ? 'bg-green-600' : 'bg-gradient-to-r from-[#ff8633] to-orange-500 hover:from-[#e6732b] hover:to-orange-600'
-                } text-white font-semibold py-3 px-6 rounded-lg shadow-md transition-all duration-200 transform hover:scale-[1.02] mt-2 disabled:opacity-70 disabled:hover:scale-100 flex items-center justify-center`}
+                } text-white font-semibold py-3 px-6 rounded-lg 
+                 transition-all duration-200 transform hover:scale-[1.02] mt-2 disabled:opacity-70 disabled:hover:scale-100 flex items-center justify-center`}
               >
                 {loading ? (
                   <>
@@ -695,7 +886,8 @@ const Blog3 = () => {
 
         {/* Share Section */}
        <div className="max-w-4xl mx-auto px-4 py-8">
-  <div className="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+  <div className="bg-white p-6 rounded-xl 
+   border border-gray-100">
     <p className="text-lg font-semibold text-gray-800 mb-4 flex items-center">
       <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
@@ -707,7 +899,8 @@ const Blog3 = () => {
       {/* LinkedIn Button */}
       <button
         onClick={shareOnLinkedIn}
-        className="flex items-center px-4 py-2 bg-[#0A66C2] text-white rounded-lg hover:bg-[#0A55A0] transition-all duration-300 shadow hover:shadow-md"
+        className="flex items-center px-4 py-2 bg-[#0A66C2] text-white rounded-lg hover:bg-[#0A55A0] transition-all duration-300 shadow hover:
+        "
       >
         <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
           <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
@@ -718,7 +911,8 @@ const Blog3 = () => {
       {/* Instagram Button */}
       <button
         onClick={shareContent}
-        className="flex items-center px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:opacity-90 transition-all duration-300 shadow hover:shadow-md"
+        className="flex items-center px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:opacity-90 transition-all duration-300 shadow hover:
+        "
       >
         <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
           <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
@@ -734,7 +928,8 @@ const Blog3 = () => {
           navigator.clipboard.writeText(currentUrl);
           alert("Link copied to clipboard!");
         }}
-        className="flex items-center px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-800 transition-all duration-300 shadow hover:shadow-md"
+        className="flex items-center px-4 py-2 bg-gray-700 text-white rounded-lg hover:bg-gray-800 transition-all duration-300 shadow hover:
+        "
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
@@ -744,11 +939,11 @@ const Blog3 = () => {
     </div>
   </div>
 </div>
-      </div>
+</div>
       
-    </>
+
   );
 };
 
 
-export default Blog3;
+export default Blog6;

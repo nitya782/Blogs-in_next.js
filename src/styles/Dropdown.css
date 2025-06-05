@@ -1,0 +1,293 @@
+/* Mega Dropdown - Premium Version */
+.mega-dropdown {
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25), 0 2px 5px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin: 0 auto;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  backdrop-filter: blur(5px);
+}
+
+.mega-dropdown-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.75rem;
+  /* background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+linear-gradient(118deg, #000e54, 30.08%, #203299 98.9%); */
+  background-size: 20px 20px, 100% 100%;
+  border-radius: 0.5rem;
+}
+
+.mega-dropdown-sections {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.mega-dropdown-section {
+  max-width: 200px;
+  transition: all 0.25s ease;
+  position: relative;
+  padding: 0.5rem;
+}
+
+.mega-dropdown-section:hover {
+  transform: translateY(-3px);
+  background: white;
+  border-radius: 0.5rem;
+}
+
+.mega-dropdown-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #000e54;
+  transition: width 0.3s ease;
+}
+
+.mega-dropdown-section:hover::before {
+  width: 30px;
+}
+
+.mega-dropdown-other-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: #000e54;
+  border-bottom: 1px solid rgba(85, 85, 85, 0.5);
+  padding-bottom: 0.75rem;
+
+  letter-spacing: 0.75px;
+  position: relative;
+}
+
+.mega-dropdown-other-title::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #000e54;
+}
+
+.mega-dropdown-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mega-dropdown-item {
+  display: block;
+  padding: 0.65rem 0;
+  font-size: 1rem;
+  color: #000e54;
+  font-weight: 500;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.mega-dropdown-item:hover {
+  color: #ff8633;
+  transform: translateX(5px);
+  /* text-shadow: 0 0 8px #000e54; */
+  background: white;
+  border-radius: 3px;
+  padding-left: 1rem;
+}
+
+.mega-dropdown-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  background: #ff8633;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.mega-dropdown-item:hover::before {
+  width: 4px;
+  height: 4px;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* added the code here */
+/* Mega Dropdown - Premium Version */
+.mega-dropdown {
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25), 0 2px 5px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  margin: 0 auto;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  backdrop-filter: blur(5px);
+}
+
+.mega-dropdown-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.75rem;
+  background-size: 20px 20px, 100% 100%;
+  border-radius: 0.5rem;
+}
+
+.mega-dropdown-sections {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.mega-dropdown-section {
+  max-width: 200px;
+  transition: all 0.25s ease;
+  position: relative;
+  padding: 0.5rem;
+}
+
+.mega-dropdown-section:hover {
+  transform: translateY(-3px);
+  background: white;
+  border-radius: 0.5rem;
+}
+
+.mega-dropdown-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: #000e54;
+  padding-bottom: 0.75rem;
+  letter-spacing: 0.75px;
+  position: relative;
+  transition: all 0.2s ease;
+  
+  /* Full gray border bottom */
+  border-bottom: 1px solid rgba(85, 85, 85, 0.5);
+  
+  /* Colored portion at the beginning */
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; /* Align with the border */
+    left: 0;
+    width: 50px; /* Length of the colored portion */
+    height: 2px; /* Thicker than the gray border */
+    background: #000e54;
+    transition: all 0.2s ease;
+  }
+}
+
+
+.mega-dropdown-title.active-section {
+  color: #ff8633;
+  border-bottom-color: #ff8633;
+}
+
+.mega-dropdown-title.active-section::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #ff8633;
+}
+
+.mega-dropdown-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mega-dropdown-item {
+  display: block;
+  padding: 0.65rem 0;
+  font-size: 1rem;
+  color: #000e54;
+  font-weight: 500;
+  margin: 0;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.mega-dropdown-item:hover {
+  color: #ff8633;
+  transform: translateX(5px);
+  background: white;
+  border-radius: 3px;
+  padding-left: 1rem;
+}
+
+.mega-dropdown-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  background: #ff8633;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.mega-dropdown-item:hover::before {
+  width: 4px;
+  height: 4px;
+  opacity: 1;
+}
+/* Add active section highlight */
+.mega-dropdown-title.active-section {
+  color: #ff8633;
+  
+}
+
+.mega-dropdown-title.active-section::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #ff8633;
+}

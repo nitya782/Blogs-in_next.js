@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 
-const Blog2 = () => {
+const Blog3 = () => {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -64,8 +64,8 @@ const Blog2 = () => {
   };
 
   const shareContent = async () => {
-    const title = "Tech Buyer And Its Decision Making Journey.";
-    const text = "Making smart decisions in a noisy digital marketplace";
+    const title = "AI in HR & Payroll: How Artificial Intelligence is Reshaping the Future of Work in 2025";
+    const text = "From manual tasks to strategic impact—AI is changing the way HR and payroll teams operate.";
     
     try {
       if (navigator.share) {
@@ -129,8 +129,8 @@ const Blog2 = () => {
 
       <Head>
         <title>Tech Buyer And Its Decision Making Journey.</title>
-        <meta property="og:title" content="Tech Buyer And Its Decision Making Journey." />
-        <meta property="og:description" content="Making smart decisions in a noisy digital marketplace" />
+        <meta property="og:title" content="AI in HR & Payroll: How Artificial Intelligence is Reshaping the Future of Work in 2025" />
+        <meta property="og:description" content="From manual tasks to strategic impact—AI is changing the way HR and payroll teams operate." />
         <meta property="og:image" content="https://blogs.compare-bazaar.com/images/blog2.webp" />
         <meta property="og:url" content={currentUrl} />
         <meta property="og:type" content="article" />
@@ -219,10 +219,10 @@ const Blog2 = () => {
               B2B Tech Buying Guide
             </span>
             <h1 className="text-3xl md:text-5xl font-bold text-[#0A3761] mb-6 leading-tight bg-gradient-to-r from-[#0A3761] to-blue-600 bg-clip-text text-transparent">
-              Tech Buyer And Its Decision Making Journey.
+              AI in HR & Payroll: How Artificial Intelligence is Reshaping the Future of Work in 2025
             </h1>
             <div className="flex items-center text-gray-500 text-sm mb-6">
-              <span>Published on May 29, 2025</span>
+              <span>Published on June 1, 2025</span>
               <span className="mx-2">•</span>
               <span>5 min read</span>
             </div>
@@ -237,66 +237,53 @@ const Blog2 = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           </div>
           
-          {/* <div className="bg-blue-50 border-l-4 border-[#0A3761] p-4 mb-8 rounded-r-lg hover:shadow-md transition-shadow duration-300">
+           <div className="bg-blue-50 border-l-4 border-[#0A3761] p-4 mb-8 rounded-r-lg hover:shadow-md transition-shadow duration-300">
             <p className="italic text-gray-700 text-lg">
-              
+              From manual tasks to strategic impact—AI is changing the way HR and payroll teams operate.
             </p>
-          </div> */}
+          </div> 
           
           <p className="text-lg leading-relaxed text-gray-700 mb-6">
-           In a world increasingly driven by automation and algorithms, it’s easy to forget that behind every B2B technology decision is a real person—navigating complexity, weighing risks, and trying to make the right call.</p>
+           HR and payroll teams are no longer just processing forms and paychecks—they are shaping the employee experience, enabling business agility, and driving strategic decisions.</p>
           <p className="text-lg leading-relaxed text-gray-700">
-            Let’s walk a mile in the shoes of a typical tech buyer. Not the fictional "CTO Persona" in your CRM, but someone like Rachel, an IT Director at a mid-sized logistics firm who’s just been told: “We need to upgrade our fleet tracking system—ASAP.”
+            And in 2025, <b>AI is at the center of that transformation.</b>
+          </p>
+          <p className="text-lg leading-relaxed text-gray-700 mt-4">
+            At Compare-Bazaar.com, we help businesses evaluate and compare the best HR and payroll solutions. And today, one thing is clear: <b>AI is no longer a futuristic add-on—it’s a must-have feature built into the most competitive platforms.</b>
+          </p>
+          <p className="text-lg leading-relaxed text-gray-700 mt-4">
+            So, what does that mean for your business?
+          </p>
+          <p className="text-lg leading-relaxed text-gray-700 mt-4">
+            Let’s break down how AI is truly reshaping HR and payroll management in 2025.
           </p>
         </div>
 
         {/* Step 1 */}
-        <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-100 ${isVisible[1] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-200 ${isVisible[2] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
             <div className="flex items-start mb-6">
               <div className="bg-[#0A3761] text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 shadow-md">
                 1
               </div>
               <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-                Phase 1: The Trigger
+                 AI-Powered Payroll Automation = Accuracy + Time Savings
               </h2>
             </div>
             <div className="pl-14">
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                It always starts with a problem.</p>
-              <p className="text-gray-700 text-lg leading-relaxed">
-                For Rachel, it was a series of missed deliveries, frustrated drivers, and a lack of visibility across the fleet. She didn’t wake up excited to shop for GPS solutions—but something broke, and now she needs to fix it.
+                Payroll is complex—tax codes, deductions, compliance regulations, and variable pay structures make it error-prone and time-consuming.
               </p>
-              <p className="text-gray-700 text-lg leading-relaxed mt-4">
-                Like most tech buyers, her first instinct isn’t to call a vendor. She turns to Google, scans a few articles, and starts forming a basic understanding of what’s out there. Her goal? Build a short list before the next leadership meeting.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Step 2 */}
-        <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-200 ${isVisible[2] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
-            <div className="flex items-start mb-6">
-              <div className="bg-[#0A3761] text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 shadow-md">
-                2
-              </div>
-              <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-                Phase 2: Research Mode
-              </h2>
-            </div>
-            <div className="pl-14">
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                Here’s where content makes all the difference.<br></br>
-                Rachel’s not looking for fluff or jargon. She’s after practical, no-nonsense guidance:
+                In 2025, <b>AI-powered payroll systems</b> can:
               </p>
-              <div className="grid md:grid-cols-2 gap-4 mb-6">
+              <div className="grid md:grid-rows-2 gap-4 mb-6">
                 <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
                   <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
                     <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2H5a1 1 0 01-1-1V4zm3 1h2v2H7V5zm4 0h2v2h-2V5zm-4 4h2v2H7V9zm4 0h2v2h-2V9z" clipRule="evenodd" />
                     </svg>
-                    What features actually matter?
+                    Auto-detect discrepancies in hours, pay rates, or tax data
                   </h3>
                 </div>
                 <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
@@ -304,7 +291,7 @@ const Blog2 = () => {
                     <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                     </svg>
-                    How much do these solutions cost?
+                     Flag compliance risks before they happen
                   </h3>
                   <p className="text-gray-600"></p>
                 </div>
@@ -314,7 +301,17 @@ const Blog2 = () => {
                       <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
                       <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
                     </svg>
-                    What do other companies in her industry use?
+                    Adapt to local and international payroll regulations
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                    </svg>
+                    Predict errors before payroll runs
                   </h3>
                   <p className="text-gray-600"></p>
                 </div>
@@ -322,37 +319,130 @@ const Blog2 = () => {
               </div>
               
               <p className="text-gray-700 text-lg leading-relaxed">
-                She reads comparison guides, peeks at reviews on G2, and even watches a few explainer videos while grabbing lunch. The vendors that win her attention are the ones who help her learn—not just sell.
+                This means <b>fewer mistakes, less manual entry,</b> and <b>faster processing</b>—giving HR teams more time to focus on people, not paperwork.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* Step 2 */}
+        <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-200 ${isVisible[2] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+            <div className="flex items-start mb-6">
+              <div className="bg-[#0A3761] text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 shadow-md">
+                2
+              </div>
+              <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+                 Smarter Hiring with AI-Driven Recruitment Tools
+              </h2>
+            </div>
+            <div className="pl-14">
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                Hiring the right talent remains a top priority—and challenge.<br></br><br></br>
+                AI tools in HR tech now:
+
+              </p>
+              <div className="grid md:grid-rows-2 gap-4 mb-6">
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2H5a1 1 0 01-1-1V4zm3 1h2v2H7V5zm4 0h2v2h-2V5zm-4 4h2v2H7V9zm4 0h2v2h-2V9z" clipRule="evenodd" />
+                    </svg>
+                    Scan resumes and match candidates to job descriptions in seconds
+                  </h3>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                    </svg>
+                     Remove unconscious bias by focusing on skills, not keywords
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                    </svg>
+                    Predict candidate success using behavioural and historical data
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                    </svg>
+                    	Automate interview scheduling and communication
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+
+              </div>
+              
+              <p className="text-gray-700 text-lg leading-relaxed">
+                <b>Bonus benefit:</b> AI allows for more inclusive and diverse hiring pipelines—making recruitment both smarter and fairer.
               </p>
             </div>
           </div>
         </div>
 
         {/* Step 3 */}
-        <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-300 ${isVisible[3] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-200 ${isVisible[2] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
             <div className="flex items-start mb-6">
               <div className="bg-[#0A3761] text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 shadow-md">
                 3
               </div>
               <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-                Phase 3: Internal Buy-In
+                 Real-Time Analytics for Workforce Planning
               </h2>
             </div>
             <div className="pl-14">
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                Now comes the pitch—internally, that is.
+                Gone are the days of relying solely on spreadsheets and annual reviews.<br></br><br></br>
+                AI-powered HR platforms now offer:
+
               </p>
-              <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                Rachel has to build a case for investment. She needs data to convince Finance it’s worth the spend, assurance from Ops that it will actually work, and a green light from Legal.
-              </p>
-              <p className="text-gray-700 text-lg leading-relaxed mb-6">
-               The tech buyer often becomes the internal “salesperson,” advocating for your solution. Do you give them the materials and language they need to succeed?
+              <div className="grid md:grid-rows-2 gap-4 mb-6">
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2H5a1 1 0 01-1-1V4zm3 1h2v2H7V5zm4 0h2v2h-2V5zm-4 4h2v2H7V9zm4 0h2v2h-2V9z" clipRule="evenodd" />
+                    </svg>
+                    Real-time dashboards tracking employee engagement, performance, and retention
+                  </h3>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                    </svg>
+                    Predictive analytics to forecast turnover or identify skill gaps
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                    </svg>
+                    Insights that help build smarter workforce development plans
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+
+              </div>
+              
+              <p className="text-gray-700 text-lg leading-relaxed">
+                Managers don’t just react—they anticipate. And AI makes that possible.
               </p>
             </div>
           </div>
-          
-
+        </div>
 
 {/* step-4 */}
         <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-200 ${isVisible[2] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -362,21 +452,22 @@ const Blog2 = () => {
                 4
               </div>
               <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-                Phase 4: Evaluation & Comparison
+                 Personalized Employee Experiences
               </h2>
             </div>
             <div className="pl-14">
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                Here’s where many brands lose their chance.<br></br><br></br>
-                By now, Rachel’s narrowed her list to 3 or 4 vendors. She fills out demo request forms. She talks to sales teams. She gets quotes. But more importantly, she asks herself:
+                AI enables a more human experience at scale.<br></br><br></br>
+                Think of it this way: your HR system knows that one employee prefers learning videos while another prefers mentorship. One may want flexible pay access, while another cares more about benefits planning.<br></br><br></br>
+                AI helps HR tools:
               </p>
-              <div className="grid md:grid-cols-2 gap-4 mb-6">
+              <div className="grid md:grid-rows-2 gap-4 mb-6">
                 <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
                   <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
                     <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2H5a1 1 0 01-1-1V4zm3 1h2v2H7V5zm4 0h2v2h-2V5zm-4 4h2v2H7V9zm4 0h2v2h-2V9z" clipRule="evenodd" />
                     </svg>
-                    Who actually understood our needs?
+                    Recommend relevant learning modules
                   </h3>
                 </div>
                 <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
@@ -384,7 +475,7 @@ const Blog2 = () => {
                     <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                     </svg>
-                    Who was transparent and responsive?
+                     Suggest wellness programs based on usage trends
                   </h3>
                   <p className="text-gray-600"></p>
                 </div>
@@ -394,116 +485,113 @@ const Blog2 = () => {
                       <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
                       <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
                     </svg>
-                    Who made her feel confident in the decision?
+                    Provide personalized support via intelligent chatbots
                   </h3>
                   <p className="text-gray-600"></p>
                 </div>
 
               </div>
-              <p className="text-gray-700 text-lg leading-relaxed mb-6">
-               It’s not just about features—it’s about trust.
+              
+              <p className="text-gray-700 text-lg leading-relaxed">
+                The result? <b>Happier, more supported employees—and a stronger culture.</b>
               </p>
-
             </div>
           </div>
         </div>
 
-
 {/* step-5 */}
 
-        <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-100 ${isVisible[1] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-200 ${isVisible[2] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
             <div className="flex items-start mb-6">
               <div className="bg-[#0A3761] text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 shadow-md">
                 5
               </div>
               <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-                Phase 5: The Decision
+                 Enhanced Compliance and Risk Management
               </h2>
             </div>
             <div className="pl-14">
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                After weeks of research, budget juggling, and stakeholder wrangling, Rachel makes her choice. Not for the cheapest or flashiest option, but for the one that gave her the most clarity and confidence.</p>
-              <p className="text-gray-700 text-lg leading-relaxed mt-4">
-                The “decision-making journey” ends with a signed contract—but the real journey continues in how the solution performs post-sale.
+                From GDPR to local tax codes, HR and payroll are surrounded by regulation. And the risk of non-compliance is growing.<br></br><br></br>
+                AI helps by:
+
+              </p>
+              <div className="grid md:grid-rows-2 gap-4 mb-6">
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2H5a1 1 0 01-1-1V4zm3 1h2v2H7V5zm4 0h2v2h-2V5zm-4 4h2v2H7V9zm4 0h2v2h-2V9z" clipRule="evenodd" />
+                    </svg>
+                    Automating audit trails
+                  </h3>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                    </svg>
+                     Tracking policy changes and applying them in real-time
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-100 hover:shadow-md transition-all duration-300 group">
+                  <h3 className="font-semibold text-[#0A3761] mb-2 flex items-center group-hover:text-blue-700 transition-colors">
+                    <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                      <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                    </svg>
+                    Ensuring your business stays compliant—locally and globally
+                  </h3>
+                  <p className="text-gray-600"></p>
+                </div>
+
+              </div>
+              
+              <p className="text-gray-700 text-lg leading-relaxed">
+                No more scrambling to catch up. AI ensures youre always one step ahead.
               </p>
             </div>
           </div>
         </div>
 
 
-
-          <div className="mt-8 group">
-            <div className="relative overflow-hidden rounded-2xl shadow-xl">
-              <img
-                src="/images/blog2_img.jpg"
-                alt="Tech decision making process"
-                className="mx-auto w-full max-w-2xl  object-cover transform transition-all duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
-                <p className="text-white text-lg font-medium">Making informed tech decisions with Compare Bazaar</p>
-              </div>
-            </div>
-            <p className="text-center text-sm text-gray-500 mt-2">Hover to see details</p>
-          </div>
-        </div>
-
-
-
-        {/* Bonus Section */}
+{/* Bonus Section */}
         <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-400 ${isVisible[4] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="bg-gradient-to-r from-[#0A3761] to-blue-700 p-6 md:p-8 rounded-xl text-white shadow-lg hover:shadow-xl transition-shadow duration-300">
             <h2 className="text-2xl md:text-3xl font-bold mb-6">
-              <span className="inline-block mr-2 animate-bounce">🔁</span> So, What Can Marketers Learn?
+              <span className="inline-block mr-2 animate-bounce">✅</span> Final Thoughts: AI Doesn’t Replace HR—It Reinvents It
             </h2>
-            
-            <div className="space-y-4">
-              <div className="flex items-start hover:bg-white/10 p-3 rounded-lg transition-all duration-300">
-                <div className="bg-white text-[#0A3761] rounded-full p-1 mr-3 mt-1 flex-shrink-0">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg">	Your buyers are human. Respect their time, their challenges, and their intelligence.</h3>
-                </div>
-              </div>
-              
-              <div className="flex items-start hover:bg-white/10 p-3 rounded-lg transition-all duration-300">
-                <div className="bg-white text-[#0A3761] rounded-full p-1 mr-3 mt-1 flex-shrink-0">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg">Help first, sell second. Content that informs will always outperform content that pushes.</h3>
-                  
-                </div>
-              </div>
-              
-              <div className="flex items-start hover:bg-white/10 p-3 rounded-lg transition-all duration-300">
-                <div className="bg-white text-[#0A3761] rounded-full p-1 mr-3 mt-1 flex-shrink-0">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg">Make it easy to compare. Simplify pricing, feature sets, and benefits.</h3>
-                </div>
-              </div>
+               <p className="text-xl leading-relaxed mb-3 font-semibold">
+                In 2025, AI isn’t taking jobs away from HR professionals—it’s <b>making their jobs more impactful.</b><br></br><br></br>
+                By handling the repetitive tasks, flagging issues early, and offering deeper insights, AI allows HR teams to focus on what truly matters: people, growth, and strategy.
+              </p>
+          </div>
+          </div>
 
-              <div className="flex items-start hover:bg-white/10 p-3 rounded-lg transition-all duration-300">
-                <div className="bg-white text-[#0A3761] rounded-full p-1 mr-3 mt-1 flex-shrink-0">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg">Trust is everything. Be responsive, authentic, and consistent.</h3>
-                </div>
+{/* step-6 */}
+        <div className={`max-w-4xl mx-auto px-4 py-8 animate-section transition-all duration-1000 delay-200 ${isVisible[2] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+            <div className="flex items-start mb-6">
+              <div className="bg-[white] text-white font-bold rounded-full w-10 h-10 flex items-center justify-center mr-4 flex-shrink-0 
+              ">
+                
               </div>
+              <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
+                💡 Ready to Upgrade Your HR or Payroll System?
+              </h2>
             </div>
-
+            <div className="pl-14">
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                At <b>Compare-Bazaar.com,</b> we help businesses compare <b>AI-powered HR and payroll platforms</b>—side-by-side, with no obligation.
+              </p>
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                🔍 Browse features.
+              </p>
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                📊 See pricing.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -516,7 +604,7 @@ const Blog2 = () => {
               
               <div className="bg-gray-50 p-6 rounded-lg border border-gray-200 hover:shadow-md transition-shadow duration-300">
                 <p className="font-bold text-lg text-[#0A3761] mb-3">
-                  Want to learn how we help tech companies like yours connect with real buyers like Rachel? Let’s talk.
+                  ✅ Make the right choice—for your people and your business.
                 </p>
                 <p className="mb-4">
                   Visit <a href="https://compare-bazaar.com" className="text-blue-600 hover:underline font-medium">Compare-Bazaar.com</a> or reach us at:
@@ -663,4 +751,4 @@ const Blog2 = () => {
 };
 
 
-export default Blog2;
+export default Blog3;

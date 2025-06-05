@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from 'react';
 
-
 export default function BlogLayout() {
   const [email, setEmail] = useState('');
   const [isSubscribed, setIsSubscribed] = useState(false);
